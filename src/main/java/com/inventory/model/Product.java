@@ -71,28 +71,28 @@ public class Product {
     public BigDecimal getPrice()    { return price; }
     public int getStockQuantity()   { return stockQuantity; }
 
-    public void setName(String name) {
+    public final void setName(String name) {
         if (name == null || name.isBlank()) {
             throw new IllegalArgumentException("Product name must not be blank");
         }
         this.name = name.trim();
     }
 
-    public void setCategory(String category) {
+    public final void setCategory(String category) {
         if (category == null || category.isBlank()) {
             throw new IllegalArgumentException("Product category must not be blank");
         }
         this.category = category.trim();
     }
 
-    public void setPrice(BigDecimal price) {
+    public final void setPrice(BigDecimal price) {
         if (price == null || price.signum() < 0) {
             throw new IllegalArgumentException("Price must not be negative");
         }
         this.price = price;
     }
 
-    public void setStockQuantity(int stockQuantity) {
+    public final void setStockQuantity(int stockQuantity) {
         if (stockQuantity < 0) {
             throw new IllegalArgumentException("Stock quantity must not be negative");
         }
