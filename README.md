@@ -74,8 +74,8 @@ directory with 12 sample products and 3 users:
 | Username | Password  | Role     |
 |----------|-----------|----------|
 | admin    | admin123  | ADMIN    |
-| alice    | alice123  | CUSTOMER |
-| bob      | bob123    | CUSTOMER |
+| rishabh  | 12345678  | CUSTOMER |
+| akshata  | 12345678  | CUSTOMER |
 
 To run the test suite:
 
@@ -244,11 +244,11 @@ Choice: 11
 
 1. Login   2. Exit
 Choice: 1
-Username: alice
-Password: alice123
-Welcome, alice (CUSTOMER)
+Username: rishabh
+Password: 12345678
+Welcome, rishabh (CUSTOMER)
 
---- Customer menu (alice) ---
+--- Customer menu (rishabh) ---
 1. View all products
 2. Search products
 3. Place an order
